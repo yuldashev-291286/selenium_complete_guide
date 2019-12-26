@@ -1,2 +1,2 @@
-# selenium_complete_guide
+# selenium_pft
 Selenium Webdriver: Сomplete guide
