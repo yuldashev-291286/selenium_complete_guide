@@ -30,7 +30,6 @@ public class TestBase {
 
     @After
     public void stop() {
-        //driver.close();
         //driver.quit();
         //driver = null;
     }
