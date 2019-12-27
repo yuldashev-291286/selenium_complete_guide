@@ -1,3 +1,5 @@
+import javax.tools.JavaCompiler
+
 plugins {
     id 'java'
 }
@@ -14,4 +16,12 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-3'
+}
+
+test {
+    maxParallelForks = 10
+}
+
+tasks.withType(JavaCompiler) {
+    options.encoding = 'UTF-8'
 }

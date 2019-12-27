@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class AdminLoginVerifyWithOldCircuitTest {
+public class AdminLoginVerifyWithOldCircuitFirefoxTest {
 
   private WebDriver driver;
   private WebDriverWait wait;
@@ -39,7 +39,7 @@ public class AdminLoginVerifyWithOldCircuitTest {
   }
 
   @Test
-  public void testAdminLoginVerifyWithOldCircuit() {
+  public void testAdminLoginVerifyWithOldCircuitFirefox() {
     driver.navigate().to("http://localhost/litecart/admin/");
     driver.findElement(By.name("username")).sendKeys("admin");
     driver.findElement(By.name("password")).sendKeys("admin");

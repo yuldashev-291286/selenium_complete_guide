@@ -13,10 +13,10 @@ public class MyFirstTest extends TestBase {
     @Test
     public void myFirstTest() {
         driver.navigate().to("http://www.google.com");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         driver.findElement(By.name("q")).sendKeys("webdriver");
         driver.findElement(By.name("btnK")).click();
-        wait.until(titleIs("webdriver - РџРѕРёСЃРє РІ Google"));
+        wait.until(titleIs("webdriver - Поиск в Google"));
     }
 
     @Test
@@ -24,7 +24,7 @@ public class MyFirstTest extends TestBase {
         driver.navigate().to("http://www.google.com");
         wait.until((WebDriver d) -> d.findElement(By.name("q"))).sendKeys("webdriver");
         driver.findElement(By.name("btnK")).click();
-        wait.until(titleIs("webdriver - РџРѕРёСЃРє РІ Google"));
+        wait.until(titleIs("webdriver - Поиск в Google"));
     }
 
     @Test
@@ -32,6 +32,6 @@ public class MyFirstTest extends TestBase {
         driver.navigate().to("http://www.google.com");
         driver.findElement(By.name("q")).sendKeys("webdriver");
         driver.findElement(By.name("btnK")).click();
-        wait.until(titleIs("webdriver - РџРѕРёСЃРє РІ Google"));
+        wait.until(titleIs("webdriver - Поиск в Google"));
     }
 }

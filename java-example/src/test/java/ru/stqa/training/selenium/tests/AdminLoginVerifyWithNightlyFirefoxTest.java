@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class AdminLoginVerifyWithNightlyTest {
+public class AdminLoginVerifyWithNightlyFirefoxTest {
 
   private WebDriver driver;
   private WebDriverWait wait;
@@ -34,7 +34,7 @@ public class AdminLoginVerifyWithNightlyTest {
   }
 
   @Test
-  public void testAdminLoginVerifyWithNightly() {
+  public void testAdminLoginVerifyWithNightlyFirefox() {
     driver.get("http://localhost/litecart/admin/");
     driver.findElement(By.name("username")).sendKeys("admin");
     driver.findElement(By.name("password")).sendKeys("admin");
