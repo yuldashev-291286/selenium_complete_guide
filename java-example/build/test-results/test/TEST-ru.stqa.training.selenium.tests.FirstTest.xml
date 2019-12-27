@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.training.selenium.tests.FirstTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-27T20:28:44" hostname="LAPTOP-DFQE49HI" time="9.256">
+  <properties/>
+  <testcase name="myFirstTest" classname="ru.stqa.training.selenium.tests.FirstTest" time="9.256"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 10008
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1577478528.418][WARNING]: Timed out connecting to Chrome, retrying...
+дек 27, 2019 11:28:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
