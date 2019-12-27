@@ -1,9 +1,10 @@
-package ru.stqa.training.selenium;
+package ru.stqa.training.selenium.study_tests;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 import java.util.List;
