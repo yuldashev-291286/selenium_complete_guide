@@ -25,12 +25,11 @@ public class AdminLoginVerifyTest {
   }
 
   @Test
-  public void myFirstTest() {
+  public void testAdminLoginVerify() {
     driver.navigate().to("http://localhost/litecart/admin/");
     driver.findElement(By.name("username")).sendKeys("admin");
     driver.findElement(By.name("password")).sendKeys("admin");
     driver.findElement(By.name("login")).click();
-    //driver.findElement(By.className("hOoLGe")).click();
     wait.until(titleIs("My Store"));
   }
 
