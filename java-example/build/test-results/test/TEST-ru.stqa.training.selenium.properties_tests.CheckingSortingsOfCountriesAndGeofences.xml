@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.training.selenium.properties_tests.CheckingSortingsOfCountriesAndGeofences" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-05T03:22:02" hostname="LAPTOP-DFQE49HI" time="14.814">
+  <properties/>
+  <testcase name="testGeofenceSortingCheck" classname="ru.stqa.training.selenium.properties_tests.CheckingSortingsOfCountriesAndGeofences" time="14.814"/>
+  <system-out><![CDATA[1   Alberta
+2   British Columbia
+3   Manitoba
+4   New Brunswick
+5   Newfoundland and Labrador
+6   Nova Scotia
+7   Ontario
+8   Prince Edward Island
+9   Qu?bec
+10   Saskatchewan
+1   Alabama
+2   Alaska
+3   Arizona
+4   Arkansas
+5   California
+6   Colorado
+7   Connecticut
+8   Delaware
+9   Florida
+10   Georgia
+11   Hawaii
+12   Idaho
+13   Illinois
+14   Indiana
+15   Iowa
+16   Kansas
+17   Kentucky
+18   Louisiana
+19   Maine
+20   Maryland
+21   Massachusetts
+22   Michigan
+23   Minnesota
+24   Mississippi
+25   Missouri
+26   Montana
+27   Nebraska
+28   Nevada
+29   New Hampshire
+30   New Jersey
+31   New Mexico
+32   New York
+33   North Carolina
+34   North Dakota
+35   Ohio
+36   Oklahoma
+37   Oregon
+38   Pennsylvania
+39   Rhode Island
+40   South Carolina
+41   South Dakota
+42   Tennessee
+43   Texas
+44   Utah
+45   Vermont
+46   Virginia
+47   Washington
+48   West Virginia
+49   Wisconsin
+50   Wyoming
+]]></system-out>
+  <system-err><![CDATA[1578194523801	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\asus\\AppData\\Local\\Temp\\rust_mozprofileZb7esa"
+1578194524188	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1578194524188	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1578194524189	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1578194524189	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1578194525528	Marionette	INFO	Listening on port 57116
+1578194525826	Marionette	WARN	TLS certificate errors will be ignored for this session
+янв 05, 2020 6:22:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1578194536439	Marionette	INFO	Stopped listening on port 57116
+[Child 8252, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8252, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 7580, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 7516, Chrome_ChildThread] WARNING: p
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+]]></system-err>
+</testsuite>

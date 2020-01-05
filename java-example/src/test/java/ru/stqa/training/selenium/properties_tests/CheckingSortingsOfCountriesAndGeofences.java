@@ -95,8 +95,16 @@ public class CheckingSortingsOfCountriesAndGeofences {
       zones.remove(zones.size() - 1);
       for (WebElement zone : zones) {
         List<WebElement> cells = zone.findElements(By.tagName("td"));
-        geofencesNames.put(Integer.parseInt(zone.getAttribute("rowIndex")), cells.get(2).getText());
+        geofencesNames.put(Integer.parseInt(zone.getAttribute("rowIndex"))
+                , cells.get(2).findElement(By.cssSelector("option[selected='selected']")).getText());
       }
+
+      Iterator<Map.Entry<Integer, String>> entries = geofencesNames.entrySet().iterator();
+      while (entries.hasNext()) {
+        Map.Entry<Integer, String> entry = entries.next();
+        System.out.println(entry.getKey() + "   " + entry.getValue());
+      }
+
       assertTrue(isSortedMap(geofencesNames));
       driver.navigate().back();
     }
