@@ -1,4 +1,4 @@
-package ru.stqa.training.selenium.tests;
+package ru.stqa.training.selenium.launching_browsers_tests;
 
 import org.junit.After;
 import org.junit.Before;

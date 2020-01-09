@@ -1,4 +1,4 @@
-package ru.stqa.training.selenium.tests;
+package ru.stqa.training.selenium.launching_browsers_tests;
 
 import org.junit.After;
 import org.junit.Before;
@@ -9,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -17,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class AdminLoginVerifyWithOldCircuitFirefoxTest {
+public class AdminLoginVerifyWithNightlyFirefoxTest {
 
   private WebDriver driver;
   private WebDriverWait wait;
@@ -25,13 +24,9 @@ public class AdminLoginVerifyWithOldCircuitFirefoxTest {
   @Before
   public void start() {
     FirefoxOptions options = new FirefoxOptions();
-    options.setBinary(new FirefoxBinary(new File("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe")));
+    options.setBinary(new FirefoxBinary(new File("c:\\Program Files\\Firefox Nightly\\firefox.exe")));
 
-    DesiredCapabilities caps = new DesiredCapabilities();
-    caps.setCapability(FirefoxDriver.MARIONETTE, false);
-    caps.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
-
-    driver = new FirefoxDriver(caps);
+    driver = new FirefoxDriver(options);
     System.out.println(((HasCapabilities) driver).getCapabilities());
 
     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -39,8 +34,8 @@ public class AdminLoginVerifyWithOldCircuitFirefoxTest {
   }
 
   @Test
-  public void testAdminLoginVerifyWithOldCircuitFirefox() {
-    driver.navigate().to("http://localhost/litecart/admin/");
+  public void testAdminLoginVerifyWithNightlyFirefox() {
+    driver.get("http://localhost/litecart/admin/");
     driver.findElement(By.name("username")).sendKeys("admin");
     driver.findElement(By.name("password")).sendKeys("admin");
     driver.findElement(By.name("login")).click();
