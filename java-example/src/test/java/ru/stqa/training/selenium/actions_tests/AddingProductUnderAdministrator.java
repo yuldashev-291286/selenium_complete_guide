@@ -57,8 +57,13 @@ public class AddingProductUnderAdministrator {
     driver.findElement(By.xpath("//input[@name='new_images[]' and @type='file']"))
             .sendKeys(purpleDuckPhoto.getAbsolutePath());
 
-    //setDatepicker(driver, "input[name='date_valid_from']", "11.01.2020");
-    //setDatepicker(driver, "input[name='date_valid_to']", "18.01.2020");
+    driver.findElement(By.cssSelector("input[name='date_valid_from']"))
+            .sendKeys("2020-01-13");
+    driver.findElement(By.cssSelector("input[name='date_valid_to']"))
+            .sendKeys("2020-01-20");
+
+//    setDatepicker(driver, "input[name='date_valid_from']", "11.01.2020");
+//    setDatepicker(driver, "input[name='date_valid_to']", "18.01.2020");
 
     JavascriptExecutor js = (JavascriptExecutor) driver;
     driver.findElement(By.cssSelector("a[href='#tab-information']")).click();
