@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.training.selenium.windows_dialogs_tests.CheckingThatLinksOpenInNewWindow" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-25T19:07:41" hostname="LAPTOP-DFQE49HI" time="126.189">
+  <properties/>
+  <testcase name="testCheckingThatLinksOpenInNewWindow" classname="ru.stqa.training.selenium.windows_dialogs_tests.CheckingThatLinksOpenInNewWindow" time="126.189"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1579979263206	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\asus\\AppData\\Local\\Temp\\rust_mozprofileSve0aR"
+1579979263608	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579979263608	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579979263608	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579979263608	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1579979265202	Marionette	INFO	Listening on port 62819
+1579979265245	Marionette	WARN	TLS certificate errors will be ignored for this session
+янв 25, 2020 10:07:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1579979305161	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1579979327079	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1579979339447	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: , line 0: uncaught exception: TagError: adsbygoogle.push() error: Page-level tag does not work inside iframes.
+1579979387084	Marionette	INFO	Stopped listening on port 62819
+[Child 16360, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16360, Chrome_Ch[Parent 9976, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1160, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1160, Chrome_ChildThread] WARNING: [Parent 9976, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1252, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1252, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_15752829
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 2704, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_15752
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+]]></system-err>
+</testsuite>
