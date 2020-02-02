@@ -46,14 +46,13 @@ public class CheckForMissingMessagesInBrowserLog {
 
   @Before
   public void start() {
-    //driver = new FirefoxDriver();
-    DesiredCapabilities caps = new DesiredCapabilities();
+    DesiredCapabilities capabilities = new DesiredCapabilities();
     LoggingPreferences logPrefs = new LoggingPreferences();
 
     logPrefs.enable(LogType.PERFORMANCE, Level.ALL);
-    caps.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
+    capabilities.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
 
-    driver = new EventFiringWebDriver(new ChromeDriver(caps));
+    driver = new EventFiringWebDriver(new ChromeDriver(capabilities));
     ((EventFiringWebDriver) driver).register(new MyListener());
 
     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
